@@ -5,7 +5,8 @@ Clonar (o hacer un Fork) el repositorio en tu servidor de vercionado git de pref
 ## Pasos para levantar el proyecto
 
 Dentro del directorio del proyecto correr
-* `npm i`
-* `npm start`
+
+- `npm i`
+- `npm start`
 
 Abrir un navegador en [http://localhost:3000](http://localhost:3000) y seguir los pasos.

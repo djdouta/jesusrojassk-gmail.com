@@ -9,7 +9,6 @@ function Test2({ add, reduce, count }) {
   const [increment, setIncrement] = useState(1);
   const [automaticIncrease, setAutomaticIncrease] = useState(false);
 
-  //
   useEffect(() => {
     automaticIncrease && handleCount(increment, true);
   });
@@ -18,6 +17,7 @@ function Test2({ add, reduce, count }) {
   const handleDinamicInput = event => {
     const value = event.currentTarget.value;
     setIncrement(value);
+    setAutomaticIncrease(false);
   };
 
   //Cambia el estado de incrementar atomatico
