@@ -6,7 +6,7 @@ import ListElement from "../components/test1/ListElement";
 import { connect } from "react-redux";
 
 //He uilizado useState porque tanto redux como hooks eran requeridos, si hay una razón por cual lo hice así.
-function Test1({ addList, list, deleteList }) {
+export function Test1({ addList, list, deleteList }) {
   const [name, setName] = useState("");
 
   //Funcion controladora del cambio de estado "Name"
@@ -58,6 +58,7 @@ function Test1({ addList, list, deleteList }) {
               list.map((element, index) => {
                 return (
                   <ListElement
+                    className="Lista"
                     key={index}
                     id={index}
                     name={element}

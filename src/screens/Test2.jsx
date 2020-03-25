@@ -5,7 +5,7 @@ import Question from "../components/test2/Question";
 import IncrementButton from "../components/test2/IncrementButton";
 import { connect } from "react-redux";
 
-function Test2({ add, reduce, count }) {
+export function Test2({ add, reduce, count }) {
   const [increment, setIncrement] = useState(1);
   const [automaticIncrease, setAutomaticIncrease] = useState(false);
 
@@ -47,12 +47,10 @@ function Test2({ add, reduce, count }) {
               seconds={null}
               handleCount={() => handleCount(0, false)}
             />
-            <input
-              type="number"
-              className="form-control"
-              readOnly
-              value={count}
-            />
+
+            <label id="count" className="form-control count">
+              {count}
+            </label>
             <IncrementButton
               name={"+1"}
               seconds={null}
